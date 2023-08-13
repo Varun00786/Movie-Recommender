@@ -1,8 +1,6 @@
-from streamlit import *
 import streamlit as st 
 import requests
 import joblib
-import numpy as np
 df=joblib.load('testF')
 tfidf_matrix=joblib.load('vectorF1')
 from sklearn.metrics.pairwise import cosine_similarity
